@@ -271,3 +271,11 @@ We visually compared the prediction results of the three models, and used four i
 
 ## Conclusion
 It can be seen that, under the evaluation criteria of the four indicators, the prediction performance of Model Model is higher than that of ARIMA model, and the prediction performance of LSTM model for historical volatility is significantly higher than that of ARIMA model, and model has the best prediction performance. In addition, we can see from the image that the predicted value of the ARIMA Model fluctuates very little, while the Baseline and model have a clear trend, which indicates that `the LSTM model is more likely than the ARIMA model to capture small fluctuations when the data is relatively small, has higher sensitivity to the data, and can better deal with complex time series patterns and long-term trends`.
+## Bibliography
+[1]Lei, L., Yu, J., Wei, Y., & Lai, X. (2018), “Economic policy uncertainty and China's stock market volatility forecasting research,” Management Science, 21(06), 88-98.<br>
+[2] Wei, Y. (2010), “ Research on the optimal volatility forecasting model for China's stock market - An empirical analysis based on high-frequency data of the Shanghai and Shenzhen 300 Index,” Management Tribune, 7(06), 936-942.<br>
+[3] Zhang, T., Yuan, Y., & Zeng, W. (2020), “Can investor attention improve market volatility prediction accuracy? - An empirical study based on high-frequency data of China's stock market,” Chinese Management Science, 28(11), 192-205.<br>
+[4] Yan, D., & Li, Y. (2008), “Volatility forecasting of the Shanghai and Shenzhen 300 index based on GARCH models,” Journal of Lanzhou Jiaotong University, (01), 92-95.<br>
+[5] Shi, X. Y. (2022), “Research on the volatility prediction of the stock market based on the improved EEMD-LSTM-Adaboost combination model,” (Doctoral dissertation, Shanghai Normal University). https://doi.org/10.27312/d.cnki.gshsu.2022.000748<br>
+[6] Zhang, H. (2020), “A short-term stock volatility prediction method based on deep learning,” Modern Marketing (Business Edition), (05), 179-181.<br>
+[7] Deng, G. X. (2024), “Research on stock market volatility prediction based on EEMD-LSTM,” (Doctoral dissertation, Southwestern University of Finance and Economics).

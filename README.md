@@ -7,6 +7,7 @@ The neural network structure we take consists of two fully connected layers and 
 .<div align=center>
 ![图片1](https://github.com/opdpjfj/Stock-volatility-prediction-based-on-multiple-LSTM-models/assets/125139348/fa903923-8004-4732-8e4a-b1daebfe0a23)
 </div>
+
 ## Model Prediction
 After model training, we predicted the historical stock volatility of the next ten time steps according to the model parameters, and then rever-normalized the predicted value of the features to get the predicted result. The prediction data and effect of the model are shown as follows:<br><br><br>
 <table class="MsoTableGrid" border="1" cellspacing="0" style="border-collapse:collapse;width:482.1500pt;margin-left:-41.5500pt;
@@ -267,6 +268,7 @@ position:relative;top:-1.0000pt;mso-text-raise:1.0000pt;"><o:p></o:p></span></p>
 .<div align=center>
 ![图片2](https://github.com/opdpjfj/Stock-volatility-prediction-based-on-multiple-LSTM-models/assets/125139348/bb6e35b1-f116-4664-9c85-5627d989552b)
 </div>
+
 ## Model Comparison 
 To analyze the predictive performance of this Model (hereinafter referred to as Model), we compared the model with the ARIMA model, and the model with only one hidden layer node number of 26 LSTM layer and fully Dense layer (hereinafter referred to as Baseline) for the next ten time steps. Among them, the training process of the neural network model used as a comparison is consistent with the above training process, and the model parameters are saved in the file "baseline.h5". The historical volatility data of the next ten time steps are still calculated from the daily frequency stock quote data of Eastern Wealth climbed by akshare.<br><br>
 We visually compared the prediction results of the three models, and used four indicators, namely MSE (mean square error), RMSE (root mean square error), NMSE (standardized mean square error) and MAE (mean absolute error), to conduct quantitative analysis of the prediction performance of the three models. The analysis results are as follows:

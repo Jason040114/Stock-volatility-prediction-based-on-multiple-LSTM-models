@@ -264,7 +264,7 @@ position:relative;top:-1.0000pt;mso-text-raise:1.0000pt;">0.009707</span><span s
 letter-spacing:-0.1000pt;font-size:7.5000pt;mso-font-kerning:1.0000pt;
 position:relative;top:-1.0000pt;mso-text-raise:1.0000pt;"><o:p></o:p></span></p></td></tr></tbody></table>
 
-<br><br><br>
+<br><br>
 .<div align=center>
 ![图片2](https://github.com/opdpjfj/Stock-volatility-prediction-based-on-multiple-LSTM-models/assets/125139348/bb6e35b1-f116-4664-9c85-5627d989552b)
 </div>

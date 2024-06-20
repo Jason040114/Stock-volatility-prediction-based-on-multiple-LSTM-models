@@ -275,6 +275,7 @@ We visually compared the prediction results of the three models, and used four i
   
 ![图片1](https://github.com/opdpjfj/Stock-volatility-prediction-based-on-multiple-LSTM-models/assets/125139348/0c67c0b9-350c-44d4-8fcf-a196d4bbe731)
 </div>
+
 ## Conclusion
 It can be seen that, under the evaluation criteria of the four indicators, the prediction performance of Model Model is higher than that of ARIMA model, and the prediction performance of LSTM model for historical volatility is significantly higher than that of ARIMA model, and model has the best prediction performance. In addition, we can see from the image that the predicted value of the ARIMA Model fluctuates very little, while the Baseline and model have a clear trend, which indicates that `the LSTM model is more likely than the ARIMA model to capture small fluctuations when the data is relatively small, has higher sensitivity to the data, and can better deal with complex time series patterns and long-term trends`.
 ## Bibliography

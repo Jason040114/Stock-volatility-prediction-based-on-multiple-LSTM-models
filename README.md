@@ -4,7 +4,9 @@ Stock volatility can reflect the volatility of the price and the future risk of 
 ## Core Model
 ### LSTM model of two fully connected layers
 The neural network structure we take consists of two fully connected layers and two LSTM layers. In order to accelerate the convergence speed, enhance the model stability, and improve the generalization ability, we add the batch standardization (BN) layer before the LSTM network of each layer. To improve the ability of the model to express non-linear sequences, we added the full connection (Dense) layer before and at the end of the LSTM network. The specific structure of the model is as follows:<br><br><br>
+.<div align=center>
 ![图片1](https://github.com/opdpjfj/Stock-volatility-prediction-based-on-multiple-LSTM-models/assets/125139348/fa903923-8004-4732-8e4a-b1daebfe0a23)
+</div>
 ## Model Prediction
 After model training, we predicted the historical stock volatility of the next ten time steps according to the model parameters, and then rever-normalized the predicted value of the features to get the predicted result. The prediction data and effect of the model are shown as follows:<br><br><br>
 <table class="MsoTableGrid" border="1" cellspacing="0" style="border-collapse:collapse;width:482.1500pt;margin-left:-41.5500pt;
@@ -262,13 +264,17 @@ letter-spacing:-0.1000pt;font-size:7.5000pt;mso-font-kerning:1.0000pt;
 position:relative;top:-1.0000pt;mso-text-raise:1.0000pt;"><o:p></o:p></span></p></td></tr></tbody></table>
 
 <br><br><br>
+.<div align=center>
 ![图片2](https://github.com/opdpjfj/Stock-volatility-prediction-based-on-multiple-LSTM-models/assets/125139348/bb6e35b1-f116-4664-9c85-5627d989552b)
+</div>
 ## Model Comparison 
 To analyze the predictive performance of this Model (hereinafter referred to as Model), we compared the model with the ARIMA model, and the model with only one hidden layer node number of 26 LSTM layer and fully Dense layer (hereinafter referred to as Baseline) for the next ten time steps. Among them, the training process of the neural network model used as a comparison is consistent with the above training process, and the model parameters are saved in the file "baseline.h5". The historical volatility data of the next ten time steps are still calculated from the daily frequency stock quote data of Eastern Wealth climbed by akshare.<br><br>
 We visually compared the prediction results of the three models, and used four indicators, namely MSE (mean square error), RMSE (root mean square error), NMSE (standardized mean square error) and MAE (mean absolute error), to conduct quantitative analysis of the prediction performance of the three models. The analysis results are as follows:
 <br><br><br>
+.<div align=center>
+  
 ![图片1](https://github.com/opdpjfj/Stock-volatility-prediction-based-on-multiple-LSTM-models/assets/125139348/0c67c0b9-350c-44d4-8fcf-a196d4bbe731)
-
+</div>
 ## Conclusion
 It can be seen that, under the evaluation criteria of the four indicators, the prediction performance of Model Model is higher than that of ARIMA model, and the prediction performance of LSTM model for historical volatility is significantly higher than that of ARIMA model, and model has the best prediction performance. In addition, we can see from the image that the predicted value of the ARIMA Model fluctuates very little, while the Baseline and model have a clear trend, which indicates that `the LSTM model is more likely than the ARIMA model to capture small fluctuations when the data is relatively small, has higher sensitivity to the data, and can better deal with complex time series patterns and long-term trends`.
 ## Bibliography
